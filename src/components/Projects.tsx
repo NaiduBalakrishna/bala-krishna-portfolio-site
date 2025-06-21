@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
 
@@ -29,13 +28,6 @@ export const Projects = () => {
       title: "Air Quality Predictor",
       description: "Machine learning application that predicts air quality index using historical environmental data, featuring data preprocessing, model training, and interactive visualization dashboard.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Data Science"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "News Aggregator App",
-      description: "Dynamic news application with category filtering system, real-time news fetching from multiple sources via News API, responsive design with search functionality.",
-      technologies: ["JavaScript", "News API", "HTML/CSS", "Responsive Design"],
       github: "#",
       demo: "#"
     },
