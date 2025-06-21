@@ -6,8 +6,7 @@ export const Skills = () => {
       skills: [
         { name: "HTML", level: 90 },
         { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 80 },
-        { name: "React", level: 75 }
+        { name: "JavaScript", level: 80 }
       ],
       color: "from-blue-500 to-blue-600"
     },
@@ -110,7 +109,7 @@ export const Skills = () => {
               <div className="space-y-3 text-gray-600">
                 <p className="flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Currently exploring advanced React patterns
+                  Currently exploring advanced JavaScript frameworks
                 </p>
                 <p className="flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>

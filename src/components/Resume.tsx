@@ -22,8 +22,8 @@ export const Resume = () => {
                       B.Tech in Computer Science
                     </h4>
                     <p className="text-blue-600 font-medium">Adikavi Nannaya University</p>
-                    <p className="text-gray-500 text-sm">2022 - 2025</p>
-                    <p className="text-gray-600 mt-2">Current CGPA: 8.0</p>
+                    <p className="text-gray-500 text-sm">2022 - 2025 (Completed)</p>
+                    <p className="text-gray-600 mt-2">Final CGPA: 8.0</p>
                   </div>
                 </div>
               </div>
@@ -62,7 +62,8 @@ export const Resume = () => {
                     for a recruitment platform managing job post verifications and expirations.
                   </p>
                   <div className="mt-3 flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">React</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">HTML/CSS</span>
+                    <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">JavaScript</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Node.js</span>
                     <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">MySQL</span>
                   </div>
@@ -81,7 +82,7 @@ export const Resume = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Web Technologies</h4>
-                    <p className="text-gray-600">HTML, CSS, React</p>
+                    <p className="text-gray-600">HTML, CSS, JavaScript</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2">Database</h4>

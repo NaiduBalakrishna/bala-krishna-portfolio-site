@@ -52,7 +52,7 @@ export const About = () => {
               <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                 <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500">
                   <p>
-                    I'm currently pursuing a <strong>B.Tech in Computer Science</strong> at Adikavi Nannaya University 
+                    I've recently completed my <strong>B.Tech in Computer Science</strong> from Adikavi Nannaya University 
                     with a CGPA of <strong>8.0</strong>. My journey in technology began with a strong foundation from 
                     my diploma in Computer Engineering at Andhra Polytechnic, where I achieved <strong>85%</strong>.
                   </p>
@@ -88,7 +88,7 @@ export const About = () => {
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-bold mb-2">8.0</div>
-                <div className="text-blue-100 text-sm font-medium">Current CGPA</div>
+                <div className="text-blue-100 text-sm font-medium">Final CGPA</div>
                 <div className="mt-2 text-xs text-blue-200">B.Tech CSE</div>
               </div>
               <div className="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300">

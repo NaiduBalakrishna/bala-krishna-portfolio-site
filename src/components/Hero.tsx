@@ -51,7 +51,7 @@ export const Hero = () => {
               
               <div className="space-y-3">
                 <h2 className="text-xl md:text-2xl text-gray-700 font-semibold">
-                  Aspiring Full Stack Developer
+                  Full Stack Developer
                 </h2>
                 <h2 className="text-xl md:text-2xl text-blue-600 font-semibold">
                   AI Enthusiast
@@ -88,7 +88,7 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-6 pt-8 justify-center lg:justify-start">
               <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-blue-600">8.0</div>
-                <div className="text-sm text-gray-600">Current CGPA</div>
+                <div className="text-sm text-gray-600">Final CGPA</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-2xl font-bold text-blue-600">100+</div>
@@ -112,7 +112,7 @@ export const Hero = () => {
               <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-300">
                 <img 
                   src="/lovable-uploads/6fd47d08-f3dd-4244-bb30-e1b4791998d5.png" 
-                  alt="Bala Krishna - Aspiring Full Stack Developer"
+                  alt="Bala Krishna - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />
                 
@@ -121,7 +121,7 @@ export const Hero = () => {
                 
                 {/* Floating badge */}
                 <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-lg">
-                  <div className="text-sm font-semibold text-gray-900">Computer Science Student</div>
+                  <div className="text-sm font-semibold text-gray-900">B.Tech Computer Science Graduate</div>
                   <div className="text-xs text-gray-600">Adikavi Nannaya University</div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export const Hero = () => {
               {/* Tech stack floating icons */}
               <div className="absolute -right-6 top-1/4 space-y-4">
                 <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform">
-                  <span className="text-xl">⚛️</span>
+                  <span className="text-xl">💻</span>
                 </div>
                 <div className="w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-transform">
                   <span className="text-xl">🐍</span>
