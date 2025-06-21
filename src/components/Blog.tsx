@@ -48,7 +48,7 @@ export const Blog = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 gap-6">
           {upcomingPosts.map((post, index) => (
             <div 
               key={index}
@@ -70,17 +70,6 @@ export const Blog = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <div className="bg-white p-6 rounded-xl shadow-lg inline-block">
-            <h4 className="text-lg font-semibold text-gray-900 mb-3">
-              Want to be notified when I publish new posts?
-            </h4>
-            <Button className="bg-blue-600 hover:bg-blue-700">
-              Subscribe to Updates
-            </Button>
-          </div>
         </div>
       </div>
     </section>

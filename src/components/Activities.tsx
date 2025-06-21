@@ -52,7 +52,7 @@ export const Activities = () => {
 
           <div className="space-y-6">
             <div className="text-center">
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-200 shadow-lg">
+              <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-blue-200 shadow-lg">
                 <img 
                   src="/lovable-uploads/599a7ee8-1ad0-43bf-9d53-eaadd32f4c4a.png" 
                   alt="Community Service"
