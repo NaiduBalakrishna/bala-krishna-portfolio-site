@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
 
@@ -41,12 +42,14 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-20 section-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Projects & Portfolio</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-800 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <h2 className="text-5xl font-bold mb-6">
+            <span className="text-gradient-primary">Projects & Portfolio</span>
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full glow-blue"></div>
+          <p className="text-slate-400 mt-6 max-w-2xl mx-auto text-lg leading-relaxed">
             A showcase of my technical projects ranging from AI-powered applications to full-stack web solutions
           </p>
         </div>
@@ -55,44 +58,50 @@ export const Projects = () => {
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+              className="card-professional rounded-xl card-hover overflow-hidden group"
             >
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <div className="p-8">
+                <div className="mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center mb-4 glow-blue">
+                    <span className="text-2xl">💻</span>
+                  </div>
+                </div>
+                
+                <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-gradient-primary transition-all duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-4 line-clamp-4">
+                <p className="text-slate-400 mb-6 leading-relaxed text-sm">
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-8">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
                     <span 
                       key={techIndex}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full"
+                      className="px-3 py-1 bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs rounded-full font-medium"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                    <span className="px-3 py-1 bg-slate-600/20 border border-slate-500/30 text-slate-400 text-xs rounded-full">
                       +{project.technologies.length - 3} more
                     </span>
                   )}
                 </div>
 
-                <div className="flex space-x-3">
+                <div className="flex space-x-4">
                   <Button 
                     variant="outline" 
                     size="sm"
-                    className="flex-1 border-gray-300 hover:bg-gray-50"
+                    className="flex-1 border-slate-600 bg-slate-800/50 text-slate-300 hover:bg-slate-700 hover:text-white transition-all duration-300"
                   >
                     <Github className="w-4 h-4 mr-2" />
                     Code
                   </Button>
                   <Button 
                     size="sm"
-                    className="flex-1 bg-blue-600 hover:bg-blue-700"
+                    className="flex-1 btn-professional"
                   >
                     <Link className="w-4 h-4 mr-2" />
                     Demo

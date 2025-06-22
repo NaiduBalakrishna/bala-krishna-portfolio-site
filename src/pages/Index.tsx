@@ -7,13 +7,12 @@ import { Skills } from "@/components/Skills";
 import { Certifications } from "@/components/Certifications";
 import { Achievements } from "@/components/Achievements";
 import { Activities } from "@/components/Activities";
-import { Blog } from "@/components/Blog";
 import { Contact } from "@/components/Contact";
 import { Navigation } from "@/components/Navigation";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-indigo-900">
       <Navigation />
       <Hero />
       <About />
@@ -23,7 +22,6 @@ const Index = () => {
       <Certifications />
       <Achievements />
       <Activities />
-      <Blog />
       <Contact />
     </div>
   );
