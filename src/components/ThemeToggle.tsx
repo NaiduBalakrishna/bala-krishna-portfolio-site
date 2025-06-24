@@ -10,9 +10,16 @@ export const ThemeToggle = () => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
+    console.log('Theme initialization:', { savedTheme, prefersDark });
+    
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setIsDark(true);
       document.documentElement.classList.add('dark');
+      console.log('Dark theme applied on initialization');
+    } else {
+      setIsDark(false);
+      document.documentElement.classList.remove('dark');
+      console.log('Light theme applied on initialization');
     }
   }, []);
 
@@ -20,12 +27,16 @@ export const ThemeToggle = () => {
     const newIsDark = !isDark;
     setIsDark(newIsDark);
     
+    console.log('Theme toggle clicked, switching to:', newIsDark ? 'dark' : 'light');
+    
     if (newIsDark) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
+      console.log('Dark theme applied');
     } else {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
+      console.log('Light theme applied');
     }
   };
 
