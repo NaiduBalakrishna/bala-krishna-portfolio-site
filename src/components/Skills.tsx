@@ -48,6 +48,13 @@ export const Skills = () => {
     "Adaptability"
   ];
 
+  const learningJourney = [
+    "Mastering Full Stack Development",
+    "Discovering the Power of AI Tools",
+    "Hands-On Exploration of AI Integration",
+    "Developing Innovative Web Projects"
+  ];
+
   return (
     <section id="skills" className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -108,22 +115,12 @@ export const Skills = () => {
             <div className="bg-white p-6 rounded-xl shadow-lg">
               <h4 className="text-lg font-semibold text-gray-800 mb-4">Learning Journey</h4>
               <div className="space-y-3 text-gray-600">
-                <p className="flex items-center text-sm">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Learning full stack development
-                </p>
-                <p className="flex items-center text-sm">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Knowing about AI tools
-                </p>
-                <p className="flex items-center text-sm">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Exploring AI tools
-                </p>
-                <p className="flex items-center text-sm">
-                  <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Building some websites
-                </p>
+                {learningJourney.map((item, index) => (
+                  <p key={index} className="flex items-center text-sm">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                    {item}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
