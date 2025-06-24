@@ -1,4 +1,3 @@
-
 import { Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -45,7 +44,7 @@ export const Hero = () => {
               
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 bg-clip-text text-transparent">
-                  Bala Krishna
+                  Naidu Balakrishna
                 </span>
               </h1>
               
@@ -112,7 +111,7 @@ export const Hero = () => {
               <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-300">
                 <img 
                   src="/lovable-uploads/6fd47d08-f3dd-4244-bb30-e1b4791998d5.png" 
-                  alt="Bala Krishna - Full Stack Developer"
+                  alt="Naidu Balakrishna - Full Stack Developer"
                   className="w-full h-full object-cover"
                 />
                 

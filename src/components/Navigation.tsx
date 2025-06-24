@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,10 +48,13 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-40 nav-glass mx-4 mt-4 rounded-2xl">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <span className="text-2xl font-bold gradient-text heading-primary">
-              BK
-            </span>
+          <div className="flex items-center space-x-4">
+            <ThemeToggle />
+            <div className="flex-shrink-0">
+              <span className="text-2xl font-bold gradient-text heading-primary">
+                BK
+              </span>
+            </div>
           </div>
 
           {/* Desktop Navigation */}
