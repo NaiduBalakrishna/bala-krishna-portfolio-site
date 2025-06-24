@@ -14,7 +14,6 @@ export const Skills = () => {
       title: "Backend",
       skills: [
         { name: "Python", level: 85 },
-        { name: "Node.js", level: 60 },
         { name: "Flask", level: 75 },
         { name: "API Development", level: 70 }
       ],
@@ -111,19 +110,19 @@ export const Skills = () => {
               <div className="space-y-3 text-gray-600">
                 <p className="flex items-center text-sm">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Currently exploring advanced JavaScript frameworks
+                  Learning full stack development
                 </p>
                 <p className="flex items-center text-sm">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Deepening Node.js and backend development
+                  Knowing about AI tools
                 </p>
                 <p className="flex items-center text-sm">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Studying machine learning algorithms
+                  Exploring AI tools
                 </p>
                 <p className="flex items-center text-sm">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
-                  Building cloud computing expertise
+                  Building some websites
                 </p>
               </div>
             </div>
