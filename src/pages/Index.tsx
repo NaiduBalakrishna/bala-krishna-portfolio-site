@@ -14,7 +14,9 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 const Index = () => {
   return (
     <div className="min-h-screen relative">
-      <ThemeToggle />
+      <div className="fixed top-20 right-6 z-50">
+        <ThemeToggle />
+      </div>
       <Navigation />
       <div className="space-y-0">
         <Hero />
