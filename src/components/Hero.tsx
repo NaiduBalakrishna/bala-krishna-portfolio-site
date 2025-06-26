@@ -1,3 +1,4 @@
+
 import { Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -9,11 +10,14 @@ export const Hero = () => {
     }
   };
 
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const downloadResume = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // This should be the path to your resume file
+    link.download = 'Naidu_Balakrishna_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -75,7 +79,7 @@ export const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={scrollToContact}
+                onClick={downloadResume}
                 className="border-2 border-blue-200 text-blue-700 hover:bg-blue-50 hover:border-blue-300 px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
               >
                 <Download className="mr-2 h-4 w-4" />
