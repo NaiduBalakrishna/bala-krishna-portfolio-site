@@ -1,4 +1,3 @@
-
 import { Download, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,9 +10,12 @@ export const Hero = () => {
   };
 
   const downloadResume = () => {
-    // Create a temporary link element to trigger download
+    // Using Google Drive direct download link
+    const driveFileId = "1GkTYhU7fY_-ROPtn45mBRDCSVC9t_mNz";
+    const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${driveFileId}`;
+    
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // This should be the path to your resume file
+    link.href = directDownloadUrl;
     link.download = 'Naidu_Balakrishna_Resume.pdf';
     document.body.appendChild(link);
     link.click();
