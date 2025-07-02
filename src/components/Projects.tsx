@@ -8,35 +8,35 @@ export const Projects = () => {
       title: "Real-Time Sign Language Recognition",
       description: "Advanced computer vision system using YOLO algorithm integrated with Flask web framework to convert hand gestures into text and audio output using Google Text-to-Speech (gTTS) technology.",
       technologies: ["Python", "YOLO", "Flask", "OpenCV", "gTTS", "Computer Vision"],
-      github: "#",
+      github: "https://github.com/naidubalakrishna/Real-Time-Sign-Language-Recognition",
       demo: "#"
     },
     {
       title: "Jarvis AI Voice Assistant",
       description: "Intelligent JavaScript-based voice assistant that performs voice commands, features secure authentication system built with Python & MySQL, and utilizes Web Speech API for natural interaction.",
       technologies: ["JavaScript", "Python", "MySQL", "Web Speech API", "Authentication"],
-      github: "#",
+      github: "https://github.com/naidubalakrishna/Jarvis-AI-Voice-Assistant",
       demo: "#"
     },
     {
       title: "Hire Now – Admin Portal",
       description: "Comprehensive admin dashboard for recruitment platform with advanced job post verification system, expiration management, and user role management with real-time analytics.",
       technologies: ["React", "Node.js", "MySQL", "Admin Dashboard", "Authentication"],
-      github: "#",
+      github: "https://github.com/naidubalakrishna/Hire-Now-Admin-Portal",
       demo: "#"
     },
     {
       title: "Air Quality Predictor",
       description: "Machine learning application that predicts air quality index using historical environmental data, featuring data preprocessing, model training, and interactive visualization dashboard.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Data Science"],
-      github: "#",
+      github: "https://github.com/naidubalakrishna/Air-Quality-Predictor",
       demo: "#"
     },
     {
       title: "YouTube Video Downloader",
       description: "User-friendly application for downloading YouTube videos with multiple quality options, built using Python with Streamlit for intuitive UI and pytube for video processing.",
       technologies: ["Python", "Streamlit", "pytube", "Web Interface"],
-      github: "#",
+      github: "https://github.com/naidubalakrishna/YouTube-Video-Downloader",
       demo: "#"
     }
   ];
@@ -94,6 +94,7 @@ export const Projects = () => {
                   <Button 
                     variant="outline" 
                     size="sm"
+                    onClick={() => window.open(project.github, '_blank')}
                     className="flex-1 border-slate-600 bg-slate-800/50 text-slate-300 hover:bg-slate-700 hover:text-white transition-all duration-300"
                   >
                     <Github className="w-4 h-4 mr-2" />
