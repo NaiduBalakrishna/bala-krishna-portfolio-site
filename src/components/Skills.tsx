@@ -3,38 +3,22 @@ export const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
-        { name: "JavaScript", level: 80 }
-      ],
+      skills: ["HTML", "CSS", "JavaScript"],
       color: "from-blue-500 to-blue-600"
     },
     {
       title: "Backend",
-      skills: [
-        { name: "Python", level: 85 },
-        { name: "Flask", level: 75 },
-        { name: "API Development", level: 70 }
-      ],
+      skills: ["Python", "Flask", "API Development"],
       color: "from-green-500 to-green-600"
     },
     {
       title: "Database",
-      skills: [
-        { name: "MySQL", level: 80 },
-        { name: "Database Design", level: 75 }
-      ],
+      skills: ["MySQL", "Database Design"],
       color: "from-purple-500 to-purple-600"
     },
     {
       title: "Tools & Others",
-      skills: [
-        { name: "Git", level: 85 },
-        { name: "VS Code", level: 90 },
-        { name: "Postman", level: 80 },
-        { name: "Jupyter", level: 85 }
-      ],
+      skills: ["Git", "VS Code", "Postman", "Jupyter"],
       color: "from-orange-500 to-orange-600"
     }
   ];
@@ -49,10 +33,10 @@ export const Skills = () => {
   ];
 
   const learningJourney = [
-    "Mastering Full Stack Development",
-    "Discovering the Power of AI Tools",
-    "Hands-On Exploration of AI Integration",
-    "Developing Innovative Web Projects"
+    "Mastering Data Science Fundamentals",
+    "Exploring Generative AI Applications",
+    "Understanding Agentic AI Systems",
+    "Building Full-Stack Solutions"
   ];
 
   return (
@@ -71,20 +55,14 @@ export const Skills = () => {
               {skillCategories.map((category, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-lg">
                   <h4 className="text-lg font-semibold text-gray-800 mb-4">{category.title}</h4>
-                  <div className="space-y-4">
+                  <div className="flex flex-wrap gap-2">
                     {category.skills.map((skill, skillIndex) => (
-                      <div key={skillIndex}>
-                        <div className="flex justify-between mb-2">
-                          <span className="text-sm font-medium text-gray-700">{skill.name}</span>
-                          <span className="text-sm text-gray-500">{skill.level}%</span>
-                        </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div 
-                            className={`h-2 rounded-full bg-gradient-to-r ${category.color} transition-all duration-1000 ease-out`}
-                            style={{ width: `${skill.level}%` }}
-                          ></div>
-                        </div>
-                      </div>
+                      <span
+                        key={skillIndex}
+                        className={`px-3 py-2 bg-gradient-to-r ${category.color} text-white text-sm rounded-lg font-medium shadow-sm hover:shadow-md transition-shadow`}
+                      >
+                        {skill}
+                      </span>
                     ))}
                   </div>
                 </div>

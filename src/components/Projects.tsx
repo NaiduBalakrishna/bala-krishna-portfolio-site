@@ -8,35 +8,28 @@ export const Projects = () => {
       title: "Real-Time Sign Language Recognition",
       description: "Advanced computer vision system using YOLO algorithm integrated with Flask web framework to convert hand gestures into text and audio output using Google Text-to-Speech (gTTS) technology.",
       technologies: ["Python", "YOLO", "Flask", "OpenCV", "gTTS", "Computer Vision"],
-      github: "https://github.com/naidubalakrishna/Real-Time-Sign-Language-Recognition",
+      github: "https://github.com/NaiduBalakrishna/Real-Time-Sign-Language-Recognition",
       demo: "#"
     },
     {
       title: "Jarvis AI Voice Assistant",
       description: "Intelligent JavaScript-based voice assistant that performs voice commands, features secure authentication system built with Python & MySQL, and utilizes Web Speech API for natural interaction.",
       technologies: ["JavaScript", "Python", "MySQL", "Web Speech API", "Authentication"],
-      github: "https://github.com/naidubalakrishna/Jarvis-AI-Voice-Assistant",
-      demo: "#"
-    },
-    {
-      title: "Hire Now – Admin Portal",
-      description: "Comprehensive admin dashboard for recruitment platform with advanced job post verification system, expiration management, and user role management with real-time analytics.",
-      technologies: ["React", "Node.js", "MySQL", "Admin Dashboard", "Authentication"],
-      github: "https://github.com/naidubalakrishna/Hire-Now-Admin-Portal",
+      github: "https://github.com/NaiduBalakrishna/Jarvis-AI-Voice-Assistant",
       demo: "#"
     },
     {
       title: "Air Quality Predictor",
       description: "Machine learning application that predicts air quality index using historical environmental data, featuring data preprocessing, model training, and interactive visualization dashboard.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Data Science"],
-      github: "https://github.com/naidubalakrishna/Air-Quality-Predictor",
+      github: "https://github.com/NaiduBalakrishna/Air-Quality-Predictor",
       demo: "#"
     },
     {
-      title: "YouTube Video Downloader",
-      description: "User-friendly application for downloading YouTube videos with multiple quality options, built using Python with Streamlit for intuitive UI and pytube for video processing.",
+      title: "YouTube-Playlist-and-Video-Downloader",
+      description: "User-friendly application for downloading YouTube videos and playlists with multiple quality options, built using Python with Streamlit for intuitive UI and pytube for video processing.",
       technologies: ["Python", "Streamlit", "pytube", "Web Interface"],
-      github: "https://github.com/naidubalakrishna/YouTube-Video-Downloader",
+      github: "https://github.com/NaiduBalakrishna/YouTube-Playlist-Video-Downloader",
       demo: "#"
     }
   ];

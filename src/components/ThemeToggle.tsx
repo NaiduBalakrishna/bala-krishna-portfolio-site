@@ -43,18 +43,22 @@ export const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/20 shadow-lg"
+      className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md border border-white/30 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-white/30 shadow-lg relative overflow-hidden"
       aria-label="Toggle theme"
     >
-      <div className="relative">
+      <div className="relative w-5 h-5">
         <Sun 
-          className={`w-4 h-4 absolute transition-all duration-300 ${
-            isDark ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'
+          className={`w-5 h-5 absolute inset-0 transition-all duration-500 ${
+            isDark 
+              ? 'rotate-90 scale-0 opacity-0' 
+              : 'rotate-0 scale-100 opacity-100'
           } text-yellow-500`}
         />
         <Moon 
-          className={`w-4 h-4 transition-all duration-300 ${
-            isDark ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'
+          className={`w-5 h-5 absolute inset-0 transition-all duration-500 ${
+            isDark 
+              ? 'rotate-0 scale-100 opacity-100' 
+              : '-rotate-90 scale-0 opacity-0'
           } text-blue-400`}
         />
       </div>
