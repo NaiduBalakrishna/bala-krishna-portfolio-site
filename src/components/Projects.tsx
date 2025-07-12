@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Link } from "lucide-react";
 
@@ -12,7 +11,7 @@ export const Projects = () => {
       demo: "#"
     },
     {
-      title: "Jarvis AI Voice Assistant",
+      title: "Jarvis AI Voice Assistant", 
       description: "Intelligent JavaScript-based voice assistant that performs voice commands, features secure authentication system built with Python & MySQL, and utilizes Web Speech API for natural interaction.",
       technologies: ["JavaScript", "Python", "MySQL", "Web Speech API", "Authentication"],
       github: "https://github.com/NaiduBalakrishna/Jarvis-AI-Voice-Assistant",
@@ -23,6 +22,13 @@ export const Projects = () => {
       description: "Machine learning application that predicts air quality index using historical environmental data, featuring data preprocessing, model training, and interactive visualization dashboard.",
       technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib", "Data Science"],
       github: "https://github.com/NaiduBalakrishna/Air-Quality-Predictor",
+      demo: "#"
+    },
+    {
+      title: "AI Text Summarizer",
+      description: "AI-powered text summarization tool that processes long documents and generates concise, meaningful summaries using advanced natural language processing techniques.",
+      technologies: ["Python", "NLP", "AI/ML", "Text Processing"],
+      github: "https://github.com/NaiduBalakrishna/AI-TEXT-SUMMARIZER",
       demo: "#"
     },
     {
